@@ -1,0 +1,11 @@
+#image {
+  height: 180px;
+  width: 300px;
+}
+
+#listNew{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
