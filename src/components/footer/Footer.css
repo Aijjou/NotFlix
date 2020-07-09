@@ -2,47 +2,63 @@
     background-color: black;
 }
 
+
+
 #btnf {
     width: 30px; 
     height: 30px;
+    margin-bottom: -25px;
+   color: red;
 }
 
 #btni {
     width: 30px; 
     height: 30px;
+    margin-bottom: -25px;
+    color: red;
 }
 
 #btnt {
     width: 30px; 
     height: 30px;
+    margin-bottom: -25px;
+    color: red;
 }
 
 #iconf{
 font-size: 30px;
-
-background-color: lightslategrey;
+width: 30px; 
+    height: 30px;
+    margin-bottom: -25px;
 
 }
 
 #iconi{
   
     font-size: 30px;
-    background-color: lightslategrey;
+width: 30px; 
+    height: 30px;
+    margin-bottom: -25px;
     
     }
 #icont{
 
-font-size: 30px;
-background-color: lightslategrey;
-
+    font-size: 30px;
+    width: 30px; 
+        height: 30px;
+        margin-bottom: -25px;
 }
 
 #copyright{
     width: auto; 
     height: auto;
+    margin-right: 10px;
+    margin-top: 40px;
 }
 #txt{
-    font-size: 10px;
+    margin-right: 10px;
+    font-size: 12px;
     font-style: helvetica ;
+    
     text-decoration-color : white;
 }
