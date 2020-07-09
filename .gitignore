@@ -1,0 +1,7 @@
+# Répertoires dist et build
+/dist
+/build
+
+# Racine du repository
+package-lock.json
+/node_modules

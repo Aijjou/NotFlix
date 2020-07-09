@@ -13,12 +13,12 @@ export class Footer extends Component {
       <div>
         <footer className="footer-container">
           <div className="row ">
-            <button
+            <a
               className="btn col-1 "
-              href="https://www.facebook.com/netflixfrance"
+              href="https://www.facebook.com/netflixfrance" target="_blank"
             >
               <i className="fa fa-facebook-official" aria-hidden="true"></i>
-            </button>
+            </a>
 
             <button
               className="btn col-1"
