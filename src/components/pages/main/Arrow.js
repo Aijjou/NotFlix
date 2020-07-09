@@ -11,7 +11,7 @@ export class Arrow extends Component {
     render() {
         return(
             <div onClick={this.arrowClick} className="col-1  d-flex align-items-center btn">
-                <i  className={this.props.type == 'left' ? 'fa fa-chevron-left' : 'fa fa-chevron-right'} aria-hidden="true"></i>
+                <i  className={this.props.type == 'left' ? 'fa fa-chevron-left' : 'fa fa-chevron-right'} aria-hidden="true" id="arrow"></i>
             </div>
         )
     }

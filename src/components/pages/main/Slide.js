@@ -8,8 +8,7 @@ export class Slide extends Component {
     render() {
         return (
             <div className={(this.props.index == this.props.indexActivation) ? 'slide-active col-10 text-center' : 'slide-noactive'}>
-                <h1>{this.props.title}</h1>
-                <div>{this.props.content}</div>
+                <img src={this.props.image} id="image2"></img>
             </div>
         )
     }
