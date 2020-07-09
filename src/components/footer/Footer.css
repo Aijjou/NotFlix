@@ -1,0 +1,48 @@
+#footer{
+    background-color: black;
+}
+
+#btnf {
+    width: 30px; 
+    height: 30px;
+}
+
+#btni {
+    width: 30px; 
+    height: 30px;
+}
+
+#btnt {
+    width: 30px; 
+    height: 30px;
+}
+
+#iconf{
+font-size: 30px;
+
+background-color: lightslategrey;
+
+}
+
+#iconi{
+  
+    font-size: 30px;
+    background-color: lightslategrey;
+    
+    }
+#icont{
+
+font-size: 30px;
+background-color: lightslategrey;
+
+}
+
+#copyright{
+    width: auto; 
+    height: auto;
+}
+#txt{
+    font-size: 10px;
+    font-style: helvetica ;
+    text-decoration-color : white;
+}
