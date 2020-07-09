@@ -7,12 +7,12 @@ export class New extends Component {
 
 
 
-      
+
     };
   }
 
   detailFilm = () => {
-    NotFlixService.new = this.props.annonce;
+    // NotFlixService.new = this.props.annonce;
     this.props.history.push("/new");
   };
   render() {
