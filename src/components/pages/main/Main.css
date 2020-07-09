@@ -1,5 +1,5 @@
 .slide-noactive {
-<<<<<<< HEAD
+
   display: none;
 }
 .bloc,
@@ -23,27 +23,3 @@
     width: 900px;
     margin-bottom: 10px;
 }
-=======
-    display: none;
-  }
-  .bloc, .bloc-active {
-    width: 18px;
-    height: 18px;
-    border-radius: 25px;
-    border:1px solid white
-  }
-  
-  .bloc-active {
-    background-color:white;
-  }
-
-  #image2{
-      height: 450px;
-      width: 900px;
-      margin-bottom: 10px;
-  }
-#arrow{
-    color : white;
-}
-
->>>>>>> 7a250d617900b81c5bf040a0ac43c5e9bb62ece4
