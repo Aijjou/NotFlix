@@ -1,0 +1,41 @@
+
+#header{
+padding-top: 15px;
+background-color: black;
+width: 100%;}
+
+#logo{
+    height: 30px;
+    width: 55px;
+    transition: all ease 2s;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+    
+}
+
+#li{
+    font-family: Helvetica;
+    color: white;
+    text-decoration: none;
+    transition: all linear 1.5s;
+}
+
+#li:hover{
+    text-shadow: #ff3d3d 0px 5px 10px;
+    transform: scale(1.2);
+}
+
+#icon{
+    font-size: 20px;
+    color: red;
+    transition: all ease 2s;
+}
+#icon:hover{
+    text-shadow: white 0px 5px 30px;
+    
+}
+
+
+

@@ -25,3 +25,23 @@
   transform:scale(0.9);
 }
 
+.card-title{
+  margin-bottom: 38px;
+  text-align: center;
+  font-family: helvetica;
+  margin-top: -20px;
+  background-color: rgba(10, 10, 10, 0.6);
+  font-size: 14pt;
+  color:whitesmoke;
+  text-shadow: 2px 2px black;
+}
+
+.card-text{
+  margin-bottom: -5px;
+  font-family: helvetica;
+  font-size: 14pt;
+  color:white;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
