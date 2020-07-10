@@ -1,65 +1,60 @@
+<<<<<<< HEAD
 #footer{
-    background-color: black;
+    background-color:black;
     
 }
 
-
-
 #btnf {
-    width: 30px; 
-    height: 30px;
-    margin-bottom: -25px;
-   color: red;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
+  color: red;
 }
 
 #btni {
-    width: 30px; 
-    height: 30px;
-    margin-bottom: -25px;
-    color: red;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
+  color: red;
 }
 
 #btnt {
-    width: 30px; 
-    height: 30px;
-    margin-bottom: -25px;
-    color: red;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
+  color: red;
 }
 
-#iconf{
-font-size: 30px;
-width: 30px; 
-    height: 30px;
-    margin-bottom: -25px;
-
+#iconf {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
 }
 
-#iconi{
-  
-    font-size: 30px;
-width: 30px; 
-    height: 30px;
-    margin-bottom: -25px;
-    
-    }
-#icont{
-
-    font-size: 30px;
-    width: 30px; 
-        height: 30px;
-        margin-bottom: -25px;
+#iconi {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
+}
+#icont {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: -25px;
 }
 
-#copyright{
-    width: auto; 
-    height: auto;
-    margin-right: 10px;
-    margin-top: 40px;
+#copyright {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 40px;
 }
-#txt{
-    margin-right: 10px;
-    font-size: 12px;
-    font-style: helvetica ;
-    
-    text-decoration-color : white;
+#txt {
+  margin-right: 10px;
+  font-size: 12px;
+  font-style: helvetica;
+
+  text-decoration-color: white;
 }
