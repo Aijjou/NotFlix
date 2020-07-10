@@ -1,7 +1,6 @@
-import React,{ Component } from "react";
+import React, { Component } from "react";
 import "./Series.css";
-import {Serie} from "./Serie";
-
+import { Serie } from "./Serie";
 
 export class Series extends Component {
   constructor(props) {
@@ -10,6 +9,12 @@ export class Series extends Component {
   }
 
   render() {
-    return <div><Serie></Serie></div>;
+    return (
+      <div>
+        <Serie
+         film = {this.props.film}
+        ></Serie>
+      </div>
+    );
   }
 }

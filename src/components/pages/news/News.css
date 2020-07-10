@@ -1,11 +1,39 @@
 #image {
-  height: 180px;
-  width: 300px;
+  height: 150px;
+  width: 250px;
 }
 
-#listNew{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#news {
+  margin: 15px 10px 50px 10px;
+}
+#listNew {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+}
+#imageFilm {
+  align-items: flex-start;
+  height: 900px;
+  width: 600px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#filmDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+#detailFilm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
