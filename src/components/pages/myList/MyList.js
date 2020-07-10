@@ -1,5 +1,6 @@
-import React,{ Component } from "react";
-import "./MyList.css"
+import React, { Component } from "react";
+import "./MyList.css";
+import { FilmMyList } from "./FilmMyList";
 export class MyList extends Component {
   constructor(props) {
     super(props);
@@ -7,6 +8,12 @@ export class MyList extends Component {
   }
 
   render() {
-    return <div>MyList</div>;
+    return (
+      <div>
+        <FilmMyList
+        film = {this.props.film}
+        ></FilmMyList>
+      </div>
+    );
   }
 }

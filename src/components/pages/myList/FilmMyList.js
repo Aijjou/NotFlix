@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import "./Films.css";
 import { NotFlixService } from "../../../services/NotFlixService";
 import history from "../../../history";
 import { withRouter } from "react-router-dom";
-
-export class Film extends Component {
+export class FilmMyList extends Component {
   constructor(props) {
     super(props);
     this.state = {};

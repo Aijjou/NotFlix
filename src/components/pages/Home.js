@@ -5,79 +5,88 @@ import { Films } from "./films/Films";
 import { Series } from "./series/Series";
 import { News } from "./news/News";
 import "./Home.css";
-import riverdale from "./riverdale.png";
-import casapapel from "./casa-papel.jpg";
-import kingdom from "./the-last-kingdom.jpg";
-import who from "./doctor-who.jpg";
+import { NotFlixService } from "../../services/NotFlixService";
 
 export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listNews: [
-        {
-          titre: "Riverdale",
-          age: "+16 ans",
-          categorie: "Sentimentale",
-          image: riverdale
-        },
-        {
-          titre: "La Casa Del Papel",
-          age: "+16 ans",
-          categorie: "Thriller",
-          image: casapapel
-        },
-        {
-          titre: "Kingdom",
-          age: "+16 ans",
-          categorie: "Aventure",
-          image: kingdom
-        },
-        {
-          titre: "Doctor Who",
-          age: "+16 ans",
-          categorie: "Sc-Fi",
-          image: who
-        }
-      ]
+      listNews: [],
+      listFilm: [],
+      listFav: [],
+      listSerie: []
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      listNews: NotFlixService.listnews,
+      listFilm: NotFlixService.listFilm,
+      listFav: NotFlixService.listFav,
+      listSerie: NotFlixService.listSerie
+    });
   }
 
   render() {
     return (
-      <div>
-        <div className="col" id="home">
-          <div className="row">
-            <MainFilm></MainFilm>
-          </div>
-          <div className="row">
-            <div className="col">
-              <h3 className="row flex-start">News</h3>
-              <div className="row" id="news">
-                {this.state.listNews.map(e => {
-                  return (
-                    <div>
-                      <News
-                        titre={e.titre}
-                        age={e.age}
-                        categorie={e.categorie}
-                        image={e.image}
-                      ></News>
-                    </div>
-                  );
-                })}
-              </div>
-             
+      <div className="container-fluid" id="home">
+        <div className="row">
+          <MainFilm></MainFilm>
+        </div>
+        <div className="row">
+          <div className="col">
+            <h3 className="flex-start">News</h3>
+            <div className="row ml4" id="news">
+              {this.state.listNews.map(e => {
+                return (
+                  <div>
+                    <News film={e}></News>
+                  </div>
+                );
+              })}
             </div>
           </div>
-          <div className="row">
-            <Films></Films>
+        </div>
+        <div className="row">
+          <div className="col">
+            <h3 className="flex-start">Films</h3>
+            <div className="row ml4" id="news">
+              {this.state.listFilm.map(e => {
+                return (
+                  <div>
+                    <Films film={e}></Films>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="row">
-            <Series></Series>
+        </div>
+        <div className="row">
+          <div className="col">
+            <h3 className="flex-start">Serie</h3>
+            <div className="row ml4" id="news">
+              {this.state.listSerie.map(e => {
+                return (
+                  <div>
+                    <Series film={e}></Series>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-          <div className="row">
-            <MyList></MyList>
+        </div>
+        <div className="row">
+          <div className="col">
+            <h3 className="flex-start">My List</h3>
+            <div className="row ml4" id="news">
+              {this.state.listFav.map(e => {
+                return (
+                  <div>
+                    <MyList film={e}></MyList>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

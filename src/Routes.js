@@ -8,22 +8,26 @@ import { Film } from "./components/pages/films/Film";
 import { Serie } from "./components/pages/series/Serie";
 import { MyList } from "./components/pages/myList/MyList";
 import { Home } from "./components/pages/Home";
+import { NewsFilmDetail } from "./components/pages/news/NewsFilmDetail";
 
 export default class Routes extends Component {
   render() {
     return (
-      <div  id="blocMain">
+      <div>
+       
         <Router history={history}>
-          <Header></Header>
+        <Header></Header>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/New" component={New} />
             <Route path="/Film" component={Film} />
             <Route path="/Serie" component={Serie} />
             <Route path="/Mylist" component={MyList} />
+            <Route path="/filmDetail" component={NewsFilmDetail} />
           </Switch>
           <Footer></Footer>
         </Router>
+       
       </div>
     );
   }

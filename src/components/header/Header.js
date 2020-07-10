@@ -12,8 +12,13 @@ export class Header extends Component {
     render() {
       return (
           <header id="header" className="container-fluid">
+<<<<<<< HEAD
             <div className="row m-2">
                   <img id="logo" className="col-md-1 " src={notflix}/>
+=======
+            <div className="row md-2">
+                  <img id="logo" className="col-md-1" src={notflix}/>
+>>>>>>> master
                 <div className="row-md-8 offset-md-8">
                     <input id="search" type="text" class="form-control" className="col-m-7" placeholder="Rechercher votre série"></input>
                   

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Films.css";
-import {Film} from "./Film";
-
-
+import { Film } from "./Film";
 
 export class Films extends Component {
   constructor(props) {
@@ -11,6 +9,12 @@ export class Films extends Component {
   }
 
   render() {
-    return <div><Film></Film></div>;
+    return (
+      <div>
+        <Film
+          film = {this.props.film}
+        ></Film>
+      </div>
+    );
   }
 }
