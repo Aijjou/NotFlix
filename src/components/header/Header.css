@@ -1,22 +1,21 @@
 
-
 #header{
+padding-top: 15px;
 background-color: black;
 width: 100%;}
 
 #logo{
-    margin-top: 10px;
     height: 30px;
     width: 55px;
     transition: all ease 2s;
 }
 
 #logo:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     
 }
 
-#li{ 
+#li{
     font-family: Helvetica;
     color: white;
     text-decoration: none;
@@ -28,7 +27,7 @@ width: 100%;}
     transform: scale(1.2);
 }
 
-#icon{  
+#icon{
     font-size: 20px;
     color: red;
     transition: all ease 2s;
