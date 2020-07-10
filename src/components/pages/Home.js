@@ -19,11 +19,13 @@ export class Home extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      listNews: NotFlixService.listnews,
-      listFilm: NotFlixService.listFilm,
-      listFav: NotFlixService.listFav,
-      listSerie: NotFlixService.listSerie
+    NotFlixService.get("listNews").then(response => {
+      this.setState({
+        listNews: response.data.news,
+        listFilm: response.data.film,
+        listFav: response.data.fav,
+        listSerie: response.data.serie
+      });
     });
   }
 
