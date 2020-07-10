@@ -12,7 +12,7 @@ export class Footer extends Component {
     return (
       <div>
         <footer className="footer-container" id="footer">
-          <div className="row bd-highlight mb-3">
+          <div className="row bd-highlight mb-0">
             <div className="btn mr-auto p-2 bd-highlight">
               <a
                 className="btn col-1 mr-2"
