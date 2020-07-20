@@ -59,21 +59,6 @@ export class MainFilm extends Component {
     });
   };
 
-  componentDidMount() {
-    this.setState({
-      indexActivation: this.state.slides.length - 1
-    });
-  }
-  leftClick = () => {
-    let tmpIndex = this.state.indexActivation - 1;
-    if (this.state.indexActivation == 0) {
-      tmpIndex = this.state.slides.length - 1;
-    }
-    this.setState({
-      indexActivation: tmpIndex
-    });
-  };
-
   rightClick = () => {
     let tmpIndex = this.state.indexActivation + 1;
     if (this.state.indexActivation == this.state.slides.length - 1) {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NotFlixService } from "../../../services/NotFlixService";
+import "./MyList.css"
 import history from "../../../history";
 import { withRouter } from "react-router-dom";
 export class FilmMyList extends Component {
@@ -9,25 +10,27 @@ export class FilmMyList extends Component {
   }
 
   detailFilm = () => {
-    NotFlixService.film = this.props.film;
+    NotFlixService.film = this.props.film2;
     history.push("/filmDetail");
   };
 
   render() {
+ 
     return (
+    
       <div>
         <div onClick={this.detailFilm} type="button" id="card">
           <div class="card bg-dark text-white">
             <img
-              src={this.props.film.image2}
+              src={this.props.film2.image2}
               class="card-img"
               alt="..."
               id="image"
             ></img>
             <div class="card-img-overlay">
-              <h5 class="card-title">{this.props.film.titre}</h5>
-              <p class="card-text">{this.props.film.categorie}</p>
-              <p class="card-text"> {this.props.film.age}</p>
+              <h5 class="card-title">{this.props.film2.titre}</h5>
+              <p class="card-text">{this.props.film2.categorie}</p>
+              <p class="card-text"> {this.props.film2.age}</p>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ export class MyList extends Component {
     return (
       <div>
         <FilmMyList
-        film = {this.props.film}
+        film2={this.props.film2}
         ></FilmMyList>
       </div>
     );

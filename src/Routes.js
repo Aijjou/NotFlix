@@ -9,6 +9,7 @@ import { Serie } from "./components/pages/series/Serie";
 import { MyList } from "./components/pages/myList/MyList";
 import { Home } from "./components/pages/Home";
 import { NewsFilmDetail } from "./components/pages/news/NewsFilmDetail";
+import { PageSeries } from "./components/pages/series/PageSeries";
 
 export default class Routes extends Component {
   render() {
@@ -21,7 +22,7 @@ export default class Routes extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/New" component={New} />
             <Route path="/Film" component={Film} />
-            <Route path="/Serie" component={Serie} />
+            <Route path="/Serie" component={PageSeries} />
             <Route path="/Mylist" component={MyList} />
             <Route path="/filmDetail" component={NewsFilmDetail} />
           </Switch>

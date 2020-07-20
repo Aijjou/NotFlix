@@ -1,0 +1,88 @@
+#card {
+  height: 150px;
+  width: 250px;
+}
+#list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+#news {
+  margin: 5px 5px 50px 5px;
+}
+#listNew {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li {
+  list-style-type: none;
+}
+#imageFilm {
+  align-items: flex-start;
+  height: 900px;
+  width: 600px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#filmDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+#detailFilm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.slide-noactive {
+  display: none;
+}
+.bloc,
+.bloc-active {
+  width: 18px;
+  height: 18px;
+  border-radius: 25px;
+  border: 1px solid gray;
+}
+
+.bloc-active {
+  background-color: white;
+}
+
+#arrow {
+  color: white;
+}
+#listnew {
+  margin: 10px;
+}
+#pageSerie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+
+#select {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.choix{
+  margin-right: 50px;
+}
+
+.blocSerie{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

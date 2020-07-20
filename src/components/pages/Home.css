@@ -6,22 +6,48 @@
   color: white;
 }
 
+#bloc1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
 #news {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transition:all ease 0.7s;
+  align-items: center;
+  transition: all ease 0.7s;
 }
 
-#news #card{
-  transition:all ease 0.7s;
+#news #card {
+  transition: all ease 0.7s;
 }
 
-#news #card:hover{
-  transform:scale(1.4);
+#news #card:hover {
+  transform: scale(1.4);
 }
 
-#news:hover{
-  transform:scale(0.9);
+#news:hover {
+  transform: scale(0.9);
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 30px;
+  color: white;
+}
+.slide-noactive {
+  display: none;
+}
+.bloc,
+.bloc-active {
+  width: 18px;
+  height: 18px;
+  border-radius: 25px;
+  border: 1px solid gray;
+}
+.bloc-active {
+  background-color: white;
 }
 
