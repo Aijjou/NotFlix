@@ -186,8 +186,6 @@ export class PageSeries extends Component {
     var tab10 = [];
     var tab11 = [];
     var thriller = {};
-    // let tab10 = [];
-    // let tab11 = [];
     NotFlixService.get("listNews").then(response => {
       let listSerieComedie1 = [];
       let listSerieEnfant1 = [];
@@ -201,7 +199,7 @@ export class PageSeries extends Component {
       for (let listserie of list) {
         for (let serie of listserie) {
           if (
-            serie.categorie == "Comedie" &&
+            serie.categorie == "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -213,7 +211,7 @@ export class PageSeries extends Component {
             tab1.push(comedie);
             listSerieComedie1.push(tab1);
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie == "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -226,7 +224,7 @@ export class PageSeries extends Component {
             tab2.push(enfant);
             listSerieEnfant1.push(tab2);
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie == "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -239,7 +237,7 @@ export class PageSeries extends Component {
             tab3.push(aventure);
             listSerieAventure1.push(tab3);
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie == "Thriller" &&
@@ -256,7 +254,7 @@ export class PageSeries extends Component {
               listSerieThriller1.push(tab11);
             }
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -269,7 +267,7 @@ export class PageSeries extends Component {
             tab5.push(fiction);
             listSerieFiction1.push(tab5);
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -282,7 +280,7 @@ export class PageSeries extends Component {
             tab6.push(fantaisie);
             listSerieFantaisie1.push(tab6);
           } else if (
-            serie.categorie != "Comedie" &&
+            serie.categorie != "Comédie" &&
             serie.categorie != "Enfant" &&
             serie.categorie != "Aventure" &&
             serie.categorie != "Thriller" &&
@@ -358,13 +356,13 @@ export class PageSeries extends Component {
             <div className="col-3 mr4">
               <div className="form-group" id="select">
                 <label for="exampleFormControlSelect1" className="choix">
-                  Choix categorie
+                  Choix catégorie
                 </label>
                 <select
                   className="form-control ml4"
                   id="exampleFormControlSelect1"
                 >
-                  <option>Comedie</option>
+                  <option>Comédie</option>
                   <option>Enfant</option>
                   <option>Aventure</option>
                   <option>Thriller</option>
@@ -400,7 +398,7 @@ export class PageSeries extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <h3 className="flex-start">Comedie</h3>
+              <h3 className="flex-start">Comédie</h3>
               <div className="row" id="bloc1">
                 <Arrow type="left" click={this.leftClick2} />
                 <div className="row" id="news">

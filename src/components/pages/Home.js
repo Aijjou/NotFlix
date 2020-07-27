@@ -168,7 +168,7 @@ export class Home extends Component {
         </div>
         <div className="row">
           <div className="col">
-            <h3 className="flex-start">Serie</h3>
+            <h3 className="flex-start">Série</h3>
             <div className="row" id="bloc1">
               <Arrow type="left" click={this.leftClick2} />
               <div className="row ml4" id="news">
